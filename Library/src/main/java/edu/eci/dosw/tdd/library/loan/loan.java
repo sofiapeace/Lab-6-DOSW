@@ -8,7 +8,7 @@ public class loan {
     private book book;
     private user user;
     private LocalDateTime loanDate;
-    private LoanStatus status;
+    private loanStatus status;
     private LocalDateTime returnDate;
 
     public book getBook() { return book; }
@@ -20,8 +20,8 @@ public class loan {
     public LocalDateTime getLoanDate() { return loanDate; }
     public void setLoanDate(LocalDateTime loanDate) { this.loanDate = loanDate; }
 
-    public LoanStatus getStatus() { return status; }
-    public void setStatus(LoanStatus status) { this.status = status; }
+    public loanStatus getStatus() { return status; }
+    public void setStatus(loanStatus status) { this.status = status; }
 
     public LocalDateTime getReturnDate() { return returnDate; }
     public void setReturnDate(LocalDateTime returnDate) { this.returnDate = returnDate; }
