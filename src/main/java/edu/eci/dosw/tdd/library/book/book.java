@@ -27,4 +27,14 @@ public class book {
     public boolean equals(Object obj) {
         return isbn.equals(((book)obj).isbn);
     }
+
+    public int getOrDefault(book book, int i) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getOrDefault'");
+    }
+
+    public void put(book book, int i) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'put'");
+    }
 }
