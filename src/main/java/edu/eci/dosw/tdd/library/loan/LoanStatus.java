@@ -1,5 +1,5 @@
 package edu.eci.dosw.tdd.library.loan;
 
-public enum loanStatus {
+public enum LoanStatus {
     ACTIVE, RETURNED
 }
