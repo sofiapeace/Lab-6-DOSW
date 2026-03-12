@@ -1,18 +1,20 @@
 package edu.eci.dosw.tdd.library.book;
 
-public class book {
-    private final String tittle;
+import java.util.Objects;
+
+public class Book {
+    private final String title;
     private final String author;
     private final String isbn;
 
-    public book(String tittle, String author, String isbn) {
-        this.tittle = tittle;
+    public Book(String title, String author, String isbn) {
+        this.title = title;
         this.author = author;
         this.isbn = isbn;
     }
 
-    public String getTittle() {
-        return tittle;
+    public String getTitle() {
+        return title;
     }
 
     public String getAuthor() {
@@ -25,16 +27,14 @@ public class book {
 
     @Override
     public boolean equals(Object obj) {
-        return isbn.equals(((book)obj).isbn);
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Book other = (Book) obj;
+        return Objects.equals(isbn, other.isbn);
     }
 
-    public int getOrDefault(book book, int i) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getOrDefault'");
-    }
-
-    public void put(book book, int i) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'put'");
+    @Override
+    public int hashCode() {
+        return Objects.hash(isbn);
     }
 }

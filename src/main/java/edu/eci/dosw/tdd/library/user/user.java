@@ -1,6 +1,6 @@
 package edu.eci.dosw.tdd.library.user;
 
-public class user {
+public class User {
     private String name;
     private String id;
 

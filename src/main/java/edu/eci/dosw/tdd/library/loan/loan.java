@@ -1,27 +1,36 @@
 package edu.eci.dosw.tdd.library.loan;
 
-import edu.eci.dosw.tdd.library.book.book;
-import edu.eci.dosw.tdd.library.user.user;
+import edu.eci.dosw.tdd.library.book.Book;
+import edu.eci.dosw.tdd.library.user.User;
 import java.time.LocalDateTime;
 
-public class loan {
-    private book book;
-    private user user;
+public class Loan {
+    private Book book;
+    private User user;
     private LocalDateTime loanDate;
-    private loanStatus status;
+    private LoanStatus status;
     private LocalDateTime returnDate;
 
-    public book getBook() { return book; }
-    public void setBook(book book) { this.book = book; }
+    public Loan(User user, Book book){
+        this.user = user;
+        this.book = book;
+        loanDate = LocalDateTime.now();
+        status = LoanStatus.ACTIVE;
+        returnDate = loanDate.plusMonths(1);
 
-    public user getUser() { return user; }
-    public void setUser(user user) { this.user = user; }
+    }
+
+    public Book getBook() { return book; }
+    public void setBook(Book book) { this.book = book; }
+
+    public User getUser() { return user; }
+    public void setUser(User user) { this.user = user; }
 
     public LocalDateTime getLoanDate() { return loanDate; }
     public void setLoanDate(LocalDateTime loanDate) { this.loanDate = loanDate; }
 
-    public loanStatus getStatus() { return status; }
-    public void setStatus(loanStatus status) { this.status = status; }
+    public LoanStatus getStatus() { return status; }
+    public void setStatus(LoanStatus status) { this.status = status; }
 
     public LocalDateTime getReturnDate() { return returnDate; }
     public void setReturnDate(LocalDateTime returnDate) { this.returnDate = returnDate; }
