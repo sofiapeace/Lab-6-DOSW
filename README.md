@@ -80,4 +80,4 @@ mvn clean test jacoco:report
 mvn sonar:sonar -Dsonar.login=sqp_110d4da8904e5c192292ac46346156e9fd9b0381 (Donde el resial es el login que usa uno al ir a la url http://localhost:9000 y pedir tocken)
 ```
 ## Prueba fotográfica
-![SonarQube Dashboard](sonarqube_dashboard.png)
+![SonarQube Dashboard](https://github.com/sofiapeace/Lab-6-DOSW/blob/develop/images/sonarQube.png)
