@@ -1,5 +1,4 @@
-package edu.eci.dosw.tdd.library.book;
-
+package edu.eci.dosw.tdd.book;
 import java.util.Objects;
 
 public class Book {

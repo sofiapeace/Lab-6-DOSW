@@ -1,18 +1,15 @@
 package edu.eci.dosw.tdd.library;
 
-
-
-import edu.eci.dosw.tdd.library.book.Book;
-import edu.eci.dosw.tdd.library.user.User;
-import edu.eci.dosw.tdd.library.loan.Loan;
-import edu.eci.dosw.tdd.library.loan.LoanStatus;
+import edu.eci.dosw.tdd.book.Book;
+import edu.eci.dosw.tdd.loan.Loan;
+import edu.eci.dosw.tdd.loan.LoanStatus;
+import edu.eci.dosw.tdd.user.User;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.List;
 
 public class Library {
 
