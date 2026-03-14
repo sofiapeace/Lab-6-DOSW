@@ -1,0 +1,34 @@
+# =========================
+# MAVEN
+# =========================
+target/
+dependency-reduced-pom.xml
+
+# =========================
+# JAVA
+# =========================
+*.class
+*.log
+
+# =========================
+# IDEs
+# =========================
+
+# IntelliJ / JetBrains
+.idea/
+*.iml
+out/
+
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# =========================
+# OS FILES
+# =========================
+.DS_Store
+Thumbs.db
