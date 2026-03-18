@@ -1,3 +1,9 @@
+## Integrantes:
+Gina Sofia Garcia
+Diego Andres Ortiz
+Julio Cesar Mayorquin
+Hildebrando Peña
+
 # Library Project - Laboratorio TDD
 
 ## Descripción
